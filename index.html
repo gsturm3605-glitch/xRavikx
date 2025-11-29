@@ -3,40 +3,59 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coral Classifier App Download</title>
+    <title>Coral Classifier App</title>
 
     <style>
         body {
+            margin: 0;
+            padding: 0;
             font-family: Arial, sans-serif;
-            background: #f2f8fa;
+            background: #0a2a43;
+            color: white;
             text-align: center;
-            padding: 40px;
-            color: #003044;
         }
+
         .container {
-            max-width: 500px;
-            margin: auto;
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+            padding: 40px 20px;
         }
-        img {
-            width: 260px;
+
+        h1 {
             margin-top: 20px;
+            font-size: 2.2rem;
         }
-        a.download {
+
+        p {
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+
+        .qr-container {
+            margin-top: 30px;
+        }
+
+        img {
+            width: 240px;
+            border-radius: 12px;
+            box-shadow: 0px 0px 15px rgba(255,255,255,0.2);
+        }
+
+        .download-link {
+            margin-top: 30px;
             display: inline-block;
-            margin-top: 25px;
-            padding: 12px 18px;
-            background: #0077b6;
+            padding: 14px 22px;
+            font-size: 1.1rem;
+            background: #1fa2ff;
+            border-radius: 8px;
             color: white;
             text-decoration: none;
-            border-radius: 8px;
-            font-size: 18px;
+            font-weight: bold;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
         }
-        a.download:hover {
-            background: #005f8c;
+
+        .footer {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            opacity: 0.7;
         }
     </style>
 </head>
@@ -44,17 +63,20 @@
 <body>
     <div class="container">
         <h1>Coral Classifier App</h1>
-        <p>Scan the QR code or click below to download the Android app.</p>
+        <p>Scan the QR code below to download the Android APK.</p>
 
-        <!-- Replace with your QR code filename -->
-        <img src="coral_app_qr.png" alt="Coral App QR Code" />
+        <div class="qr-container">
+            <!-- CHANGE THIS FILENAME BELOW -->
+            <img src="qr code.png" alt="Coral App QR Code" />
+        </div>
 
-        <br>
-
-        <!-- Replace this with your Google Drive direct download link -->
-        <a class="download" href="https://drive.google.com/file/d/1CfvObuIIMcCmLUE9yv28kopcvyFGJhMT/view?usp=sharing" target="_blank">
+        <a class="download-link" href="https://drive.google.com/file/d/1CfvObuIIMcCmLUE9yv28kopcvyFGJhMT/view?usp=sharing">
             Download APK
         </a>
+
+        <div class="footer">
+            © 2025 Coral Classifier by ReeflineSwim
+        </div>
     </div>
 </body>
 </html>
